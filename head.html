@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .global-nav-wrapper {
+            width: 100%;
+            height: 44px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .global-nav-wrapper-content {
+            width: 976px;
+            margin: auto;
+            height: 100%;
+            color: #f5f5f7;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            line-height: 44px;
+        }
+        .link-apple {
+            display: inline-block;
+            height: 44px;
+            width: 14px;
+            background-image: url(./svgs/apple.svg);
+        }
+        .link-search {
+            display: inline-block;
+            width: 15px;
+            height: 44px;
+            background-image: url(./svgs/search.svg);
+
+        }
+        .link-bag {
+            display: inline-block;
+            width: 13px;
+            height: 44px;
+            background-image: url(./svgs/bag.svg);
+
+        }
+        .global-nav-wrapper-content li {
+            cursor: pointer;
+            opacity: 0.8;
+            transition: opacity .3s cubic-bezier(0.25, 0.1, 0.25, 1);
+            font-family: SF Pro Text;
+            font-weight: 100;
+        }
+        .global-nav-wrapper-content li:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <nav class="global-nav-wrapper" id="global-nav">
+        <ul class="global-nav-wrapper-content">
+            <li>
+                <a class="link-apple"></a>
+            </li>
+            <li><a href="javascript:;">Store</a></li>
+            <li><a href="javascript:;">Mac</a></li>
+            <li><a href="javascript:;">iPad</a></li>
+            <li><a href="javascript:;">iPhone</a></li>
+            <li><a href="javascript:;">Watch</a></li>
+            <li><a href="javascript:;">AirPods</a></li>
+            <li><a href="javascript:;">TV & Home</a></li>
+            <li><a href="javascript:;">Only on Apple</a></li>
+            <li><a href="javascript:;">Accessories</a></li>
+            <li><a href="javascript:;">Support</a></li>
+            <li>
+                <a class="link-search"></a>
+            </li>
+            <li>
+                <a class="link-bag"></a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

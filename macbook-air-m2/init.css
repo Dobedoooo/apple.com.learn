@@ -1,0 +1,52 @@
+
+body {
+    width: 100%;
+    /* height: 29128px; */
+    font-family: SF Pro Display;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+img {
+    width: 100%;
+}
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+
+.width-100p::after { width: 100% !important; }
+.width-100p { width: 100% !important; }
+
+.pos-abs { position: absolute; }
+
+.headline-gradient {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    --gradient-highlight-spread: 20%;
+    --gradient-shimmer-angle: 100deg;
+    --gradient-position: 140%;
+    --gradient-position-start: 140;
+    --gradient-position-end: -40;
+    --headline-gradient-direction: 90deg;
+    --headline-gradient-start: #194bb5;
+    --headline-gradient-end: #009de4;
+    --headline-gradient-shimmer: #5ac8fa;
+    background-image: linear-gradient(
+            var(--gradient-shimmer-angle),
+            transparent calc(50% - var(--gradient-highlight-spread)),
+            var(--headline-gradient-shimmer),
+            transparent calc(50% + var(--gradient-highlight-spread))),
+        linear-gradient(
+            var(--headline-gradient-direction),
+            var(--headline-gradient-start),
+            var(--headline-gradient-end)
+        );
+    background-repeat: no-repeat;
+    background-size: 200% 100%, 100% 100%;
+    background-position: var(--gradient-position) 50%, 50% 50%;
+}

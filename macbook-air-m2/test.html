@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="init.css">
+</head>
+<body>
+    <header>
+        <script src="../head.html.js"></script>
+    </header>
+    
+    <nav class="local-nav-wrapper" id="local-nav">
+        <div id="scrollTop"></div>
+        <div class="local-nav-wrapper-content">
+            <a href="javascript:;" class="local-nav-wrapper-content-title">
+                M2 chip model<span>MacBook Air</span>
+            </a>
+            <div class="local-nav-wrapper-content-menu">
+                <ul class="local-nav-wrapper-content-menu-list">
+                    <li class="local-nav-wrapper-content-menu-list-title">Overview</li>
+                    <li class="local-nav-wrapper-content-menu-list-item">
+                        <a href="javascript:;">Why mac</a>
+                    </li>
+                    <li class="local-nav-wrapper-content-menu-list-item">
+                        <a href="javascript:;">Tech Specs</a>
+                    </li>
+                </ul>
+                <div class="local-nav-wrapper-content-menu-button">Buy</div>
+            </div>
+        </div>
+    </nav>
+    <div class="scene-sticky">
+        <div class="scene video-1-box" id="video-1-box">
+            <video src="./videos/large-1.webm" id="video-1" preload="auto" muted playsinline></video>
+        </div>
+        <div class="scene video-2-box" id="video-2-box">
+            <video src="./videos/large-2.webm" id="video-2" preload="auto" muted playsinline></video>
+            <div class="video-2-box-text-wrapper">
+                <p class="video-2-box-text headline-gradient" id="video-2-text">All-new design.</p>
+            </div>
+        </div>
+        <div class="scene scene-3-box" id="scene-3-box">
+            <div class="scene-3-box-wrapper" id="scene-3-box-wrapper">
+                <div class="scene-3-box-text-wrapper" id="scene-3-box-text-wrapper">
+                    <p class="headline-gradient" id="scene-3-box-text">Supercharged.</p>
+                </div>
+                <div class="chip" id="chip">
+                    <img class="width-100p" src="./images/chip.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="scene scene-4-box" id="scene-4-box">
+            <div class="scene-4-text headline-gradient" id="scene-4-text">
+                <p class="">Up to 18 hours<br>of battery life.</p>
+            </div>
+            <div class="scene-4-hardware-wrapper" id="scene-4-hardware-wrapper">
+                <div class="scene-4-screen-wrapper pos-abs" id="scene-4-screen-wrapper">
+                    <img src="images/starlight.jpg" class="pos-abs" id="scene-4-screen-starlight">
+                    <img src="images/midnight.jpg" class="pos-abs" id="scene-4-screen-midnight">
+                    <div class="scene-4-startframe-wrapper pos-abs" id="scene-4-startframe">
+                        <video src="./videos/large-4.mp4" id="video-4" class="pos-abs" autoplay playsinline muted loop></video>
+                    </div>
+                    <div class="scene-4-powerpoint-wrapper pos-abs" id="scene-4-powerpoint">
+                        <img src="images/light_powerpoint.png" class="pos-abs" id="scene-4-ppt-light">
+                        <img src="images/dark_powerpoint.png" class="pos-abs" id="scene-4-ppt-dark">
+                    </div>
+                    <div class="scene-4-music-wrapper pos-abs" id="scene-4-music">
+                        <img src="images/music.png" class="pos-abs">
+                    </div>
+                </div>
+            </div>
+            <button class="scene-4-play-button playing" id="scene-4-play-button">
+                <svg class="svg-icon loading-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 85">
+                    <path class="control-path circle-transparent" d="M42.5,2.5a40,40,0,1,1-40,40A40,40,0,0,1,42.5,2.5Z" fill="none" stroke="#000" stroke-linecap="round" stroke-width="4px" stroke-linejoin="round" opacity="0.2"></path>
+                    <path class="control-path circle-segment" d="M42.5,2.5a40,40,0,0,1,40,40" fill="none" stroke="#000" stroke-linecap="round" stroke-width="4px" stroke-linejoin="bevel"></path>
+                </svg>
+                 <svg class="svg-icon pause-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 85">
+                    <path class="control-path circle-opaque" d="M42.5,2.5a40,40,0,1,1-40,40A40,40,0,0,1,42.5,2.5Z" fill="none" stroke="#000" stroke-linecap="round" stroke-width="4px" stroke-linejoin="round"></path>
+                    <path class="control-fill pause-line" d="M50,28.25a2,2,0,0,1,2,2v24a2,2,0,1,1-4,0v-24A2,2,0,0,1,50,28.25Z"></path>
+                    <path class="control-fill pause-line" d="M35,28.25a2,2,0,0,1,2,2v24a2,2,0,1,1-4,0v-24A2,2,0,0,1,35,28.25Z"></path>
+                </svg>
+                <svg class="svg-icon play-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 85">
+                    <path class="control-path circle-opaque" d="M42.5,2.5a40,40,0,1,1-40,40A40,40,0,0,1,42.5,2.5Z" fill="none" stroke="#000" stroke-linecap="round" stroke-width="4px" stroke-linejoin="round"></path>
+                    <path class="control-fill play-shape" d="M55.73,41.55a1.34,1.34,0,0,1,0,1.48,1.16,1.16,0,0,1-.52.52L35.27,56.1a1.33,1.33,0,0,1-.74.15,1.54,1.54,0,0,1-1.48-1.48v-25a1.25,1.25,0,0,1,.22-.74,1.16,1.16,0,0,1,.52-.52,1.25,1.25,0,0,1,.74-.22,2.19,2.19,0,0,1,.74.15L55.21,41a2,2,0,0,1,.52.59"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="scene scene-5-box" id="scene-5-box">
+            <div class="scene-5-text scene-5-text-1 headline-gradient" id="scene-5-text-1">
+                <p>Big, beautiful Liquid&nbsp;Retina display.</p>
+            </div>
+            <div class="scene-5-video-wrapper" id="scene-5-video-wrapper">
+                <video src="./videos/large-5.webm" id="scene-5-video" preload="auto" muted playsinline></video>
+            </div>
+            <div class="scene-5-text scene-5-text-2 headline-gradient" id="scene-5-text-2">
+                <p>Advanced camera and audio.</p>
+            </div>
+        </div>
+    </div>
+    <div class="scene-static">
+        <div class="product-sticky-wrapper">
+            <div class="product-sticky-container" id="product-sticky-container">
+                <div class="product-wrapper" id="product-wrapper">
+                    <div class="product mba1">
+                        <img src="./images/mba_silver.jpg">
+                    </div>
+                    <div class="product mba2"><img src="./images/mba_starlight.jpg"></div>
+                    <div class="product mba3"><img src="./images/mba_spacegray.jpg"></div>
+                    <div class="product mba4"><img src="./images/mba_midnight.jpg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="height: 2000px;" class="intro-text">
+        <h2 class="intro-text-headline fade-in">MacBook Air</h2>
+        <p class="intro-text-subhead fade-in">Don't take it lightly.</p>
+        <div class="intro-text-chip-wrapper fade-in">
+            <p class="intro-text-headline">Supercharged by</p>
+            <img src="./images/chip.jpg" class="intro-text-chip">
+        </div>
+    </div>
+    <script src="../utils.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
